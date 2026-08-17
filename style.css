@@ -37,8 +37,15 @@ body {
 }
 
 .nav-text {
-    color: black;
-    margin: 0 1rem;
+    color: #2d3436;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-text:hover {
+    color: #40916c;
 }
 
 .nav-right {
