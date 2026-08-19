@@ -177,7 +177,7 @@ main {
 .blogs-card:hover {
     transform: translateY(-5px);
     border-radius: 20px;
-    border: 5px solid rgba(27,67,50,0.9);
+    border: 3px solid rgba(27,67,50,0.9);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
