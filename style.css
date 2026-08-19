@@ -36,6 +36,14 @@ body {
     letter-spacing: 1px;
 }
 
+#title-logo {
+    color: #1b4332;
+    font-weight: 1000;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 .nav-text {
     color: #2d3436;
     text-decoration: none;
@@ -64,7 +72,7 @@ body {
 }
 
 .nav-right button:hover {
-    background-color: #40916c;
+    color: lightgreen;
     scale: 1.05;
 }
 
@@ -74,6 +82,7 @@ main {
 
 .container h1 {
     text-align: center;
+    font-size: 500;
 }
 
 .container {
@@ -88,7 +97,7 @@ main {
     padding-bottom: 40px;
 }
 
-.first-section h1 {
+.first-section img {
     text-align: center;
     color:#1b4332;
     margin-bottom: 20px;
@@ -96,14 +105,16 @@ main {
 
 #first-section-text p {
     text-align: center;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 15px auto;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #636e72;
 }
+
 .second-section {
     background-color: #e2e4e2;
 }
+
 .second-section h2 {
     padding-top: 20px;
     text-align: center;
@@ -146,6 +157,49 @@ main {
     object-fit: cover;
     border-radius: 20px;
     display: block;
+}
+
+h2{
+    color: #1b4332;
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.top-author {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.author-info {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-author-description {
+    margin: 0;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .footer {
