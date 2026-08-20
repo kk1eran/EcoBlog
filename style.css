@@ -23,9 +23,9 @@ p {
 
 .nav {
     display: flex;
-    flex-wrap: wrap;       /* Crucial: allows wrapping when space runs out */
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; /* Centers items when they wrap */
+    justify-content: center;
     padding: 1rem 5%;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
@@ -34,7 +34,7 @@ p {
     top: 0;
     width: 100%;
     z-index: 1000;
-    gap: 15px 40px;        /* 15px gap when stacked, 40px when side-by-side */
+    gap: 15px 40px;    
     box-shadow: 0 2px 20px rgba(0,0,0,0.05);
 }
 
@@ -124,8 +124,15 @@ main {
 }
 
 .first-section {
-    padding: 15vh 0;
-    padding-bottom: 40px;
+    padding: 20vh 0 100px 0;
+    background-image: linear-gradient(
+        rgba(244, 249, 244, 0.75), 
+        rgba(244, 249, 244, 0.75)
+    ), url('treebg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .first-section img {
@@ -138,19 +145,23 @@ main {
     max-width: 1200px;
     margin: 15px auto;
     line-height: 1.5;
-    color: #636e72;
+    color: #2f3335;
 }
 
 .second-section {
     background-color: #e9ede9;
     padding: 80px 0;
     position: relative;
+    
+    
+    margin-top: -50px;
     border-top-left-radius: 50% 50px;
     border-top-right-radius: 50% 50px;
+    z-index: 2;
 }
 
 .second-section h2 {
-    padding-top: 20px;
+    padding-top: 0;
     text-align: center;
 }
 
@@ -171,7 +182,7 @@ main {
 
 .blogs-card {
     background-color: #ffffff;
-    border-radius: 24px; /* More organic roundness */
+    border-radius: 24px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid rgba(0,0,0,0.05);
@@ -197,6 +208,22 @@ main {
 h2{
     color: #1b4332;
     text-align: center;
+}
+
+.third-section {
+    background-image: linear-gradient(
+        rgba(244, 249, 244, 0.75), 
+        rgba(244, 249, 244, 0.75)
+    ), url('treebg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.third-section h2 {
+    margin-top: 0;
+    padding-top: 60px;
 }
 
 .top {
@@ -225,6 +252,7 @@ h2{
 }
 
 .top-author-description {
+    color: #2f3335;
     margin: 0;
     max-width: 500px;
     line-height: 1.6;
